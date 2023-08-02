@@ -1,1 +1,1 @@
-# gitops-cd
+# gitops-deployment
