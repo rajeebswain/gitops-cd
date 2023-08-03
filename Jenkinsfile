@@ -34,7 +34,7 @@ pipeline{
                     git add deployment/deployment.yml
                     git commit -m 'Updated the deployment file' """
                     withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
-                        sh "git push https://$user:$pass@github.com/rajeebswain/gitops-deployment.git mainr"
+                        sh "git push https://$user:$pass@github.com/rajeebswain/gitops-deployment.git main"
                     }
                 }
             }     
